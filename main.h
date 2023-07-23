@@ -23,6 +23,7 @@ int (*get_func(char ch))(va_list);
 int print_ch(va_list list);
 int print_str(va_list list);
 int print_prct(va_list list);
+int print_nan(char ch1, char ch2);
 int print_int(va_list list);
 
 #endif
