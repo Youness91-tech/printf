@@ -17,7 +17,8 @@
 #define CONVERT_UNSIGNED 2
 
 int _printf(const char *format, ...);
-
+int _putchar(char c);
+int (*get_func(char ch))(va_list);
 /****************** FUNCTIONS ******************/
 int print_ch(va_list list);
 int print_str(va_list list);
