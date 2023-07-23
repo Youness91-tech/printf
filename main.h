@@ -19,10 +19,10 @@
 int _printf(const char *format, ...);
 
 /****************** FUNCTIONS ******************/
-int print_ch(va_list character);
-int print_str(va_list string);
-int print_prct(va_list percent);
-int print_int(va_list integer);
+int print_ch(va_list list);
+int print_str(va_list list);
+int print_prct(va_list list);
+int print_int(va_list list);
 
 #endif
 
