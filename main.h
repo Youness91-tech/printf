@@ -16,6 +16,18 @@
 #define CONVERT_LOWERCASE 1
 #define CONVERT_UNSIGNED 2
 
+/**
+ * struct ops - a structure containing a char to compare with formatb modifiers
+ * and then choose the right function when it matches
+ * @operation: the char we want to compare to
+ * @func: the address of the function
+ */
+typedef struct ops
+{
+	char operation;
+	int (*func)(va_list);
+} ops_pfun;
+
 int _printf(const char *format, ...);
 int _putchar(char c);
 int (*get_func(char ch))(va_list);
