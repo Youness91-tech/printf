@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 				return (-1);
 			pfunc = get_func(format[i + 1]);
 			if (pfunc == NULL)
-				count += print_nan(format[i], format[i + 1]);
+				count += print_prct(format[i], format[i + 1]);
 			else
 				count += pfunc(list);
 			i++;
